@@ -1,0 +1,175 @@
+@media only screen and (max-width: 991px) {
+
+  /* ----------------------------------
+     Spacing & Alignment
+     ---------------------------------- */
+  .vert-middle-md {
+    display: block;
+    height: auto;
+  }
+
+  .text-center-md {
+    text-align: center;
+  }
+
+  .text-center-md .social > li:first-child {
+    margin-left: 5px !important;
+  }
+
+  .text-center-md .social > li:last-child {
+    margin-right: 5px !important;
+  }
+
+  .text-center-md .btn:first-child {
+    margin-left: 5px !important;
+  }
+
+  .text-center-md .btn:last-child {
+    margin-right: 5px !important;
+  }
+
+  /* ----------------------------------
+     Main Section
+     ---------------------------------- */
+  .main-p-v1{
+    padding-top: 145px;
+  }
+
+  /* ----------------------------------
+     Skills Section
+     ---------------------------------- */
+  .skill-left,
+  .skill-right {
+    text-align: justify;
+  }
+
+  /* ----------------------------------
+     Navigation Header
+     ---------------------------------- */
+  .navbar-header {
+    float: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 5px 0;
+  }
+
+  .navbar-nav > li {
+    float: none;
+  }
+
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus,
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:focus,
+  .navbar-nav > .active > a:hover {
+    background-color: transparent;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .navbar-nav .open .dropdown-menu > li > a {
+    display: inline-block;
+    line-height: 20px;
+  }
+
+  .navbar-nav .open .dropdown-menu .dropdown-header,
+  .navbar-nav .open .dropdown-menu > li > a {
+    padding: 5px 15px 5px 25px;
+  }
+
+  .light-version .navbar {
+    background-color: #fff;
+  }
+
+  /* ----------------------------------
+     Header Section
+     ---------------------------------- */
+
+  .header {
+    padding-top: 120px;
+	height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* ----------------------------------
+     Spacing & Alignment
+     ---------------------------------- */
+  .vert-middle-sm {
+    display: block;
+    height: auto;
+  }
+
+  /* ----------------------------------
+     Skill Section
+     ---------------------------------- */
+  .skill-left,
+  .skill-right {
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  /* ----------------------------------
+   Navigation Header
+   ---------------------------------- */
+  .navbar > .container .navbar-toggle,
+  .navbar > .container-fluid .navbar-toggle {
+    margin-right: 0;
+	
+  }
+}
+
+@media (min-width: 992px) {
+
+  /* ----------------------------------
+   Navigation Header
+   ---------------------------------- */
+  .navbar-collapse-md {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+  }
+
+  .navbar-collapse-md.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+	text-align: center;
+  }
+
+  .navbar-collapse-md.in {
+    overflow-y: visible;
+  }
+}
+
+@media (min-width: 522px) and (max-width: 767px) {
+
+  /* ----------------------------------
+   Spacing & Alignment
+   ---------------------------------- */
+
+  .wrapper-h-xs-lg {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+ 
+}

@@ -1,0 +1,688 @@
+/* ___________________________________________
+
+                   CONTENT
+   ___________________________________________ */
+/*   01. General Styles                        */
+/*   02. Typography                            */
+/*   03. Backgrounds                           */
+/*   04. Buttons, Links                        */
+/*   05. Loader                                */
+/*   06. Spacing & Alignment                   */
+/*   07. Navigation Header                     */
+/*   08. Main Section                          */
+/*   09. Skills Section                          */
+
+/* _____________________________________
+
+   01. General Styles
+   _____________________________________ */
+
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family:"Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.light-version {
+  color: #444;
+}
+
+
+/* ----------------------------------
+   Bootstrap Fix: IE10
+   in Windows 8 & Windows Phone 8
+   ---------------------------------- */
+
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/* _____________________________________
+
+   02. Typography
+   _____________________________________ */
+
+h1, .h1,
+h2, .h2,
+p, .lead {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h1, .h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h2, .h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h3, .h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h4, .h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h5, .h5 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+h6, .h6 {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h1:last-child, .h1:last-child,
+h2:last-child, .h2:last-child,
+h3:last-child, .h3:last-child,
+h4:last-child, .h4:last-child,
+h5:last-child, .h5:last-child,
+h6:last-child, .h6:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+/* ----------------------------------
+   Font Colors
+   ---------------------------------- */
+
+.text-white {
+  color: #fff;
+}
+
+/* _____________________________________
+
+   03. Backgrounds
+   _____________________________________ */
+
+
+.bg-color-light {
+  background-color: #f8d9e7;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-dark {
+  background-color: #444444;
+}
+
+
+/* _____________________________________
+
+   04. Buttons, Links
+   _____________________________________ */
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn,
+a.btn {
+  display: inline-block;
+  margin: 5px !important;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border-radius: 17px;
+  border: none;
+  transition: background .3s ease-in-out;
+}
+a.btn>i{
+	margin:0px;
+}
+.btn:first-child {
+  margin-left: 0 !important;
+}
+
+.btn:last-child {
+  margin-right: 0 !important;
+}
+
+.btn:active,
+a.btn:active {
+  box-shadow: none;
+}
+
+.btn-xs,
+a.btn-xs {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 12px;
+  border: none;
+  border-radius: 9px;
+}
+
+.btn-sm,
+a.btn-sm {
+  padding: 4px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 15px;
+}
+
+.btn-lg,
+a.btn-lg {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 21px;
+}
+
+.btn i {
+  margin-right: 10px;
+}
+
+.btn[type="submit"] i {
+  margin: 0;
+}
+
+/* ----------------------------------
+   Buttons Circle
+   ---------------------------------- */
+
+.btn-circle {
+  display: block;
+  height: 34px;
+  width: 34px;
+  margin: 0;
+  text-align: center;
+  line-height: 32px;
+  transition: background .3s ease-in-out;
+  border-radius: 50%;
+  border: none;
+}
+
+.btn-circle-sm {
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.btn-circle-lg {
+  height: 42px;
+  width: 42px;
+  font-size: 16px;
+  line-height: 38px;
+}
+
+/* ----------------------------------
+   Social Buttons
+   ---------------------------------- */
+
+ul.social {
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.social > li {
+  float: left;
+  margin: 5px;
+}
+
+.social > li > a {
+  margin: 0;
+}
+
+.social > li:first-child {
+  margin-left: 0;
+}
+
+.social > li:last-child {
+  margin-right: 0;
+}
+
+.text-center .social > li:first-child {
+  margin-left: 5px;
+}
+
+.text-center .social > li:last-child {
+  margin-right: 5px;
+}
+
+/* ----------------------------------
+   Top Button
+   ---------------------------------- */
+
+.btn-top {
+  position: fixed;
+  bottom: 80px;
+  right: 0;
+  z-index: 500;
+  display: none;
+  margin-right: 20px;
+  font-size: 24px;
+  line-height: 40px;
+  cursor: pointer;
+  filter: alpha(opacity=40);
+  opacity: 0.4;
+}
+
+.btn-top:hover {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+/* ----------------------------------
+   Buttons Color
+   ---------------------------------- */
+
+.btn-color {
+  color: #fff !important;
+  background-color: #3aafd6;
+}
+
+.btn-color:hover,
+.btn-color:active,
+.btn-color:focus {
+  background-color: #379bbc !important;
+}
+
+/* _____________________________________
+
+   05. Loader
+   _____________________________________ */
+
+.loader {
+  position: fixed;
+  z-index: 1200;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.loader-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ball-pulse-color > div {
+  background-color: #3aafd6;
+}
+
+/* _____________________________________
+
+   06. Spacing, Alignment, Helperclasses
+   _____________________________________ */
+
+.vert-middle-sm,
+.vert-middle-md {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main > h1{
+	font-family:'Pacifico',cursive;
+	letter-spacing: 2px;
+	margin-bottom:0px;
+}
+.section-p-lg {
+  padding: 55px 0 60px;
+}
+
+.section-p-sm {
+  padding: 20px 0;
+}
+
+.wrapper-v-lg {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.wrapper-v-md {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.wrapper-v-sm {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.section-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* _____________________________________
+
+   07. Navigation Header
+   _____________________________________ */
+
+.navbar {
+  padding: 10px 5px 10px 5px;
+  margin-bottom: 0;
+  border: none;
+  box-shadow: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu{
+	display: inline-block!important;
+    float: none!important;
+}
+.menu-effect .menu-item {
+	position: relative;
+	margin: 1em;
+	background-color:transparent;
+}
+
+.menu-effect .menu__link {
+	position: relative;
+	display: block;
+	min-width: 120px;
+	text-align: center;
+	color: #b5b5b5;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+	
+}
+
+.menu-effect .menu-link:hover,
+.menu-effect .menu-ink:focus {
+	color: #d94f5c;
+	background-color:transparent;
+}
+
+.menu-effect .menu-item-current .menu-link {
+	color: #d94f5c;
+	background-color:transparent;
+}
+
+.menu-effect .menu-item::before,
+.menu-effect .menu-item::after,
+.menu-effect .menu-link::before,
+.menu-effect .menu-link::after {
+	content: '';
+	position: absolute;
+	background: #d94f5c;
+	-webkit-transition: -webkit-transform 0.1s;
+	transition: transform 0.1s;
+	-webkit-transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
+	transition-timing-function: cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+/* left and right line */
+.menu-effect .menu-item::before,
+.menu-effect .menu-item::after {
+	top: 0;
+	width: 2px;
+	height: 100%;
+	-webkit-transform: scale3d(1, 0, 1);
+	transform: scale3d(1, 0, 1);
+}
+
+/* left line */
+.menu-effect .menu-item::before {
+	left: 0;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+/* right line */
+.menu-effect .menu-item::after {
+	right: 0;
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+/* top and bottom line */
+.menu-effect .menu-link::before,
+.menu-effect .menu-link::after {
+	left: 0;
+	width: 100%;
+	height: 2px;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+}
+
+/* top line */
+.menu-effect .menu-link::before {
+	top: 0;
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+/* bottom line */
+.menu-effect .menu-link::after {
+	bottom: 0;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+/* Delays (first reverse, then current) */
+
+/* bottom line */
+.menu-effect .menu-item .menu-link::after {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.menu-effect .menu-item-current .menu-link::after {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+/* left line */
+.menu-effect .menu-item::before {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.menu-effect .menu-item-current::before {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+/* top line */
+.menu-effect .menu-item .menu-link::before {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.menu-effect .menu-item-current .menu-link::before {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+/* right line */
+.menu-effect .menu-item-current::after {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.menu-effect .menu-item-current::before,
+.menu-effect .menu-item-current::after,
+.menu-effect .menu-item-current .menu-link::before,
+.menu-effect .menu-item-current .menu-link::after {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+
+.navbar-nav > li > a {
+  color: #444;
+  padding: 10px 15px;
+  font-weight:bold;
+  text-transform:uppercase;
+  font-family:"Montserrat", Arial, sans-serif;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  background-color: #eee;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.navbar-toggle {
+  padding: 5px 15px 3px;
+  margin-right: 15px;
+  border: none;
+}
+
+/* ----------------------------------
+   Navbar Transparent / Scroll Color
+   ---------------------------------- */
+
+.navbar.navbar-light {
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/* ----------------------------------
+   Navbar Icon
+   ---------------------------------- */
+
+.navbar-icon {
+  position: relative;
+  height: 20px;
+  width: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+
+}
+
+.navbar-icon span {
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #3aafd6;
+  border-radius: 9px;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.navbar-icon span:nth-child(1) {
+  top: 0;
+}
+
+.navbar-icon span:nth-child(2) {
+  top: 8px;
+}
+
+.navbar-icon span:nth-child(3) {
+  top: 16px;
+}
+
+.navbar-icon.open span:nth-child(1) {
+  top: 8px;
+  transform: rotate(135deg);
+}
+
+.navbar-icon.open span:nth-child(2) {
+  left: -40px;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.navbar-icon.open span:nth-child(3) {
+  top: 8px;
+  transform: rotate(-135deg);
+}
+
+/* _____________________________________
+
+   8. Main Section
+   _____________________________________ */
+
+.main-p-v1 {
+  padding-top: 208px;
+  padding-bottom: 150px;
+}
+
+
+/* _____________________________________
+
+   9. Skills Section
+   _____________________________________ */
+
+.skill-left {
+  text-align: right;
+}
+
+.skill-right {
+  text-align: left;
+}
+
